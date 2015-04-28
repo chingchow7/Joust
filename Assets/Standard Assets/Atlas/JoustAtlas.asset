@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: JoustAtlas
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: ad4a25600a150724588514120610a3a1, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: .546875
+    y: 0
+    width: .25
+    height: .25
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .544921875
+    height: .505859375
+  - serializedVersion: 2
+    x: .798828125
+    y: 0
+    width: .0625
+    height: .25
+  textureGUIDs:
+  - 845fef7591ce91242994bc292ab90509
+  - d9588468e4c11664287b8b3b0adae801
+  - 681dc6a07c33b73409189e0a42d9e4b6
+  textureSizes:
+  - {x: 128, y: 128}
+  - {x: 279, y: 259}
+  - {x: 32, y: 128}
+  defaultPivotOffsets:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  textureNames:
+  - DarkGrey_Angle128x128
+  - wbf_head
+  - DarkGrey_Rect32x128
+  texturePaths:
+  - Assets/2D Dev Sprites/DarkGrey/DarkGrey_Angle128x128.png
+  - Assets/Standard Assets/Textures/wbf_head.png
+  - Assets/2D Dev Sprites/DarkGrey/DarkGrey_Rect32x128.png
+  lastBuildID: 2015042804265659
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0
