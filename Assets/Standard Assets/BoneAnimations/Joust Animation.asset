@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: -1545704558, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
   m_Name: Joust Animation
   m_EditorClassIdentifier: 
-  buildID: 201504290204369219
+  buildID: 201504301647311375
   needsRebuilt: 0
   boneDataList:
   - active: 1
@@ -44,6 +44,11 @@ MonoBehaviour:
     boneColor:
       blendingWeight: 0
       color: {r: 1, g: 1, b: 1, a: 1}
+  - active: 1
+    boneName: BodyCollider
+    boneColor:
+      blendingWeight: 0
+      color: {r: 1, g: 1, b: 1, a: 1}
   dfsBoneNodeList:
   - parentBoneIndex: -1
     boneDataIndex: 0
@@ -54,13 +59,16 @@ MonoBehaviour:
   - parentBoneIndex: 1
     boneDataIndex: 3
     depth: 2
+  - parentBoneIndex: 2
+    boneDataIndex: 6
+    depth: 3
   - parentBoneIndex: 1
     boneDataIndex: 4
     depth: 2
-  - parentBoneIndex: 3
+  - parentBoneIndex: 4
     boneDataIndex: 1
     depth: 3
-  - parentBoneIndex: 4
+  - parentBoneIndex: 5
     boneDataIndex: 5
     depth: 4
   animationClips:
@@ -738,7 +746,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -837,7 +845,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -1346,6 +1354,119 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: Spear
+        textureIndex: -1
+      mixTransform: 0
+      visible: 1
+      colorRCurveSerialized:
+        keyframes: []
+      colorGCurveSerialized:
+        keyframes: []
+      colorBCurveSerialized:
+        keyframes: []
+      colorACurveSerialized:
+        keyframes: []
+      colorBlendWeightCurveSerialized:
+        keyframes: []
+    - boneDataIndex: 6
+      keyframes:
+      - boneDataIndex: 6
+        frame: 0
+        userTriggerCallback: 0
+        userTriggerTag: 
+        useKeyframeType: 1
+        keyframeType: 0
+        localPosition:
+          val: {x: 0, y: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 0
+          useY: 0
+        localPosition3:
+          val: {x: 0, y: 0, z: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        localRotation:
+          val: 0
+          inTangent: 0
+          outTangent: 0
+          tangentMode: 0
+          use: 1
+        localScale3:
+          val: {x: 1, y: 1, z: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        imageScale:
+          val: {x: 1, y: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 1
+          useY: 1
+        color:
+          val: {r: 1, g: 1, b: 1, a: 1}
+          inTangentR: 0
+          outTangentR: 0
+          tangentModeR: 0
+          inTangentG: 0
+          outTangentG: 0
+          tangentModeG: 0
+          inTangentB: 0
+          outTangentB: 0
+          tangentModeB: 0
+          inTangentA: 0
+          outTangentA: 0
+          tangentModeA: 0
+          use: 1
+          blendWeight: 0
+          inTangentBlendWeight: 0
+          outTangentBlendWeight: 0
+          tangentModeBlendWeight: 0
+        useAtlas: 1
+        atlas: {fileID: 0}
+        useTextureGUID: 1
+        textureGUID: 
+        usePivotOffset: 1
+        pivotOffset: {x: 0, y: 0}
+        useDefaultPivot: 1
+        useDepth: 1
+        depth: 0
+        useCollider: 1
+        collider:
+          type: 1
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
+          sphereRadius: .349999994
+          useAnimationLayer: 1
+          layer: 0
+          isTrigger: 1
+          tag: Player
         textureIndex: -1
       mixTransform: 0
       visible: 1
@@ -2259,7 +2380,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -2358,7 +2479,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -2457,7 +2578,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -3217,6 +3338,119 @@ MonoBehaviour:
         keyframes: []
       colorBlendWeightCurveSerialized:
         keyframes: []
+    - boneDataIndex: 6
+      keyframes:
+      - boneDataIndex: 6
+        frame: 0
+        userTriggerCallback: 0
+        userTriggerTag: 
+        useKeyframeType: 1
+        keyframeType: 0
+        localPosition:
+          val: {x: 0, y: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 0
+          useY: 0
+        localPosition3:
+          val: {x: 0, y: 0, z: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        localRotation:
+          val: 0
+          inTangent: 0
+          outTangent: 0
+          tangentMode: 0
+          use: 1
+        localScale3:
+          val: {x: 1, y: 1, z: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        imageScale:
+          val: {x: 1, y: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 1
+          useY: 1
+        color:
+          val: {r: 1, g: 1, b: 1, a: 1}
+          inTangentR: 0
+          outTangentR: 0
+          tangentModeR: 0
+          inTangentG: 0
+          outTangentG: 0
+          tangentModeG: 0
+          inTangentB: 0
+          outTangentB: 0
+          tangentModeB: 0
+          inTangentA: 0
+          outTangentA: 0
+          tangentModeA: 0
+          use: 1
+          blendWeight: 0
+          inTangentBlendWeight: 0
+          outTangentBlendWeight: 0
+          tangentModeBlendWeight: 0
+        useAtlas: 1
+        atlas: {fileID: 0}
+        useTextureGUID: 1
+        textureGUID: 
+        usePivotOffset: 1
+        pivotOffset: {x: 0, y: 0}
+        useDefaultPivot: 1
+        useDepth: 1
+        depth: 0
+        useCollider: 1
+        collider:
+          type: 1
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
+          sphereRadius: .349999994
+          useAnimationLayer: 1
+          layer: 0
+          isTrigger: 1
+          tag: Player
+        textureIndex: -1
+      mixTransform: 0
+      visible: 1
+      colorRCurveSerialized:
+        keyframes: []
+      colorGCurveSerialized:
+        keyframes: []
+      colorBCurveSerialized:
+        keyframes: []
+      colorACurveSerialized:
+        keyframes: []
+      colorBlendWeightCurveSerialized:
+        keyframes: []
     fps: 40
     maxFrame: 13
     wrapMode: 1
@@ -3225,758 +3459,11 @@ MonoBehaviour:
     layer: 0
     blendWeight: 1
     animationNeedsTwoKeyframes: 0
-  - animationName: AttackFinished
-    bones:
-    - boneDataIndex: 0
-      keyframes:
-      - boneDataIndex: 0
-        frame: 0
-        userTriggerCallback: 0
-        userTriggerTag: 
-        useKeyframeType: 1
-        keyframeType: 0
-        localPosition:
-          val: {x: 0, y: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 0
-          useY: 0
-        localPosition3:
-          val: {x: 0, y: 0, z: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        localRotation:
-          val: 0
-          inTangent: 0
-          outTangent: 0
-          tangentMode: 0
-          use: 1
-        localScale3:
-          val: {x: 1, y: 1, z: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        imageScale:
-          val: {x: 1, y: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 1
-          useY: 1
-        color:
-          val: {r: 1, g: 1, b: 1, a: 1}
-          inTangentR: 0
-          outTangentR: 0
-          tangentModeR: 0
-          inTangentG: 0
-          outTangentG: 0
-          tangentModeG: 0
-          inTangentB: 0
-          outTangentB: 0
-          tangentModeB: 0
-          inTangentA: 0
-          outTangentA: 0
-          tangentModeA: 0
-          use: 1
-          blendWeight: 0
-          inTangentBlendWeight: 0
-          outTangentBlendWeight: 0
-          tangentModeBlendWeight: 0
-        useAtlas: 1
-        atlas: {fileID: 0}
-        useTextureGUID: 1
-        textureGUID: 
-        usePivotOffset: 1
-        pivotOffset: {x: 0, y: 0}
-        useDefaultPivot: 1
-        useDepth: 1
-        depth: 0
-        useCollider: 1
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        textureIndex: -1
-      mixTransform: 0
-      visible: 1
-      colorRCurveSerialized:
-        keyframes: []
-      colorGCurveSerialized:
-        keyframes: []
-      colorBCurveSerialized:
-        keyframes: []
-      colorACurveSerialized:
-        keyframes: []
-      colorBlendWeightCurveSerialized:
-        keyframes: []
-    - boneDataIndex: 1
-      keyframes:
-      - boneDataIndex: 1
-        frame: 0
-        userTriggerCallback: 0
-        userTriggerTag: 
-        useKeyframeType: 1
-        keyframeType: 1
-        localPosition:
-          val: {x: 0, y: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 0
-          useY: 0
-        localPosition3:
-          val: {x: -9.06667709, y: 222.390366, z: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        localRotation:
-          val: 4.5999999
-          inTangent: 0
-          outTangent: 0
-          tangentMode: 0
-          use: 1
-        localScale3:
-          val: {x: 1, y: 1, z: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        imageScale:
-          val: {x: .341421306, y: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 1
-          useY: 1
-        color:
-          val: {r: 1, g: 0, b: 0, a: 1}
-          inTangentR: 0
-          outTangentR: 0
-          tangentModeR: 0
-          inTangentG: 0
-          outTangentG: 0
-          tangentModeG: 0
-          inTangentB: 0
-          outTangentB: 0
-          tangentModeB: 0
-          inTangentA: 0
-          outTangentA: 0
-          tangentModeA: 0
-          use: 1
-          blendWeight: 1
-          inTangentBlendWeight: 0
-          outTangentBlendWeight: 0
-          tangentModeBlendWeight: 0
-        useAtlas: 1
-        atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-        useTextureGUID: 1
-        textureGUID: 845fef7591ce91242994bc292ab90509
-        usePivotOffset: 1
-        pivotOffset: {x: 0, y: 0}
-        useDefaultPivot: 1
-        useDepth: 1
-        depth: 0
-        useCollider: 1
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        textureIndex: 0
-      mixTransform: 0
-      visible: 1
-      colorRCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-      colorGCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 0
-          inTangent: 0
-          outTangent: 0
-      colorBCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 0
-          inTangent: 0
-          outTangent: 0
-      colorACurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-      colorBlendWeightCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-    - boneDataIndex: 2
-      keyframes:
-      - boneDataIndex: 2
-        frame: 0
-        userTriggerCallback: 0
-        userTriggerTag: 
-        useKeyframeType: 1
-        keyframeType: 0
-        localPosition:
-          val: {x: 0, y: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 0
-          useY: 0
-        localPosition3:
-          val: {x: 0, y: 0, z: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        localRotation:
-          val: 0
-          inTangent: 0
-          outTangent: 0
-          tangentMode: 0
-          use: 1
-        localScale3:
-          val: {x: 1, y: 1, z: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        imageScale:
-          val: {x: 1, y: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 1
-          useY: 1
-        color:
-          val: {r: 1, g: 1, b: 1, a: 1}
-          inTangentR: 0
-          outTangentR: 0
-          tangentModeR: 0
-          inTangentG: 0
-          outTangentG: 0
-          tangentModeG: 0
-          inTangentB: 0
-          outTangentB: 0
-          tangentModeB: 0
-          inTangentA: 0
-          outTangentA: 0
-          tangentModeA: 0
-          use: 1
-          blendWeight: 0
-          inTangentBlendWeight: 0
-          outTangentBlendWeight: 0
-          tangentModeBlendWeight: 0
-        useAtlas: 1
-        atlas: {fileID: 0}
-        useTextureGUID: 1
-        textureGUID: 
-        usePivotOffset: 1
-        pivotOffset: {x: 0, y: 0}
-        useDefaultPivot: 1
-        useDepth: 1
-        depth: 0
-        useCollider: 1
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        textureIndex: -1
-      mixTransform: 0
-      visible: 1
-      colorRCurveSerialized:
-        keyframes: []
-      colorGCurveSerialized:
-        keyframes: []
-      colorBCurveSerialized:
-        keyframes: []
-      colorACurveSerialized:
-        keyframes: []
-      colorBlendWeightCurveSerialized:
-        keyframes: []
-    - boneDataIndex: 3
-      keyframes:
-      - boneDataIndex: 3
-        frame: 0
-        userTriggerCallback: 0
-        userTriggerTag: 
-        useKeyframeType: 1
-        keyframeType: 1
-        localPosition:
-          val: {x: 0, y: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 0
-          useY: 0
-        localPosition3:
-          val: {x: 0, y: 0, z: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        localRotation:
-          val: 0
-          inTangent: 0
-          outTangent: 0
-          tangentMode: 0
-          use: 1
-        localScale3:
-          val: {x: 1, y: 1, z: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        imageScale:
-          val: {x: .649999976, y: .649999976}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 1
-          useY: 1
-        color:
-          val: {r: 1, g: 0, b: 0, a: 1}
-          inTangentR: 0
-          outTangentR: 0
-          tangentModeR: 0
-          inTangentG: 0
-          outTangentG: 0
-          tangentModeG: 0
-          inTangentB: 0
-          outTangentB: 0
-          tangentModeB: 0
-          inTangentA: 0
-          outTangentA: 0
-          tangentModeA: 0
-          use: 1
-          blendWeight: 1
-          inTangentBlendWeight: 0
-          outTangentBlendWeight: 0
-          tangentModeBlendWeight: 0
-        useAtlas: 1
-        atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-        useTextureGUID: 1
-        textureGUID: d9588468e4c11664287b8b3b0adae801
-        usePivotOffset: 1
-        pivotOffset: {x: 0, y: 0}
-        useDefaultPivot: 1
-        useDepth: 1
-        depth: 0
-        useCollider: 1
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        textureIndex: 1
-      mixTransform: 0
-      visible: 1
-      colorRCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-      colorGCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 0
-          inTangent: 0
-          outTangent: 0
-      colorBCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 0
-          inTangent: 0
-          outTangent: 0
-      colorACurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-      colorBlendWeightCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-    - boneDataIndex: 4
-      keyframes:
-      - boneDataIndex: 4
-        frame: 0
-        userTriggerCallback: 0
-        userTriggerTag: 
-        useKeyframeType: 1
-        keyframeType: 1
-        localPosition:
-          val: {x: 0, y: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 0
-          useY: 0
-        localPosition3:
-          val: {x: -35.6968117, y: 173.948837, z: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        localRotation:
-          val: 37.8000336
-          inTangent: 0
-          outTangent: 0
-          tangentMode: 0
-          use: 1
-        localScale3:
-          val: {x: 1, y: 1, z: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        imageScale:
-          val: {x: .5, y: 2.5}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 1
-          useY: 1
-        color:
-          val: {r: 1, g: 0, b: 0, a: 1}
-          inTangentR: 0
-          outTangentR: 0
-          tangentModeR: 0
-          inTangentG: 0
-          outTangentG: 0
-          tangentModeG: 0
-          inTangentB: 0
-          outTangentB: 0
-          tangentModeB: 0
-          inTangentA: 0
-          outTangentA: 0
-          tangentModeA: 0
-          use: 1
-          blendWeight: 1
-          inTangentBlendWeight: 0
-          outTangentBlendWeight: 0
-          tangentModeBlendWeight: 0
-        useAtlas: 1
-        atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-        useTextureGUID: 1
-        textureGUID: 681dc6a07c33b73409189e0a42d9e4b6
-        usePivotOffset: 1
-        pivotOffset: {x: 0, y: 0}
-        useDefaultPivot: 1
-        useDepth: 1
-        depth: 0
-        useCollider: 1
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        textureIndex: 2
-      mixTransform: 0
-      visible: 1
-      colorRCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-      colorGCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 0
-          inTangent: 0
-          outTangent: 0
-      colorBCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 0
-          inTangent: 0
-          outTangent: 0
-      colorACurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-      colorBlendWeightCurveSerialized:
-        keyframes:
-        - time: 0
-          value: 1
-          inTangent: 0
-          outTangent: 0
-    - boneDataIndex: 5
-      keyframes:
-      - boneDataIndex: 5
-        frame: 0
-        userTriggerCallback: 0
-        userTriggerTag: 
-        useKeyframeType: 1
-        keyframeType: 0
-        localPosition:
-          val: {x: 0, y: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 0
-          useY: 0
-        localPosition3:
-          val: {x: 0, y: 0, z: 0}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        localRotation:
-          val: 0
-          inTangent: 0
-          outTangent: 0
-          tangentMode: 0
-          use: 1
-        localScale3:
-          val: {x: 1, y: 1, z: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          inTangentZ: 0
-          outTangentZ: 0
-          tangentModeZ: 0
-          useX: 1
-          useY: 1
-          useZ: 1
-        imageScale:
-          val: {x: 1, y: 1}
-          inTangentX: 0
-          outTangentX: 0
-          tangentModeX: 0
-          inTangentY: 0
-          outTangentY: 0
-          tangentModeY: 0
-          useX: 1
-          useY: 1
-        color:
-          val: {r: 1, g: 1, b: 1, a: 1}
-          inTangentR: 0
-          outTangentR: 0
-          tangentModeR: 0
-          inTangentG: 0
-          outTangentG: 0
-          tangentModeG: 0
-          inTangentB: 0
-          outTangentB: 0
-          tangentModeB: 0
-          inTangentA: 0
-          outTangentA: 0
-          tangentModeA: 0
-          use: 1
-          blendWeight: 0
-          inTangentBlendWeight: 0
-          outTangentBlendWeight: 0
-          tangentModeBlendWeight: 0
-        useAtlas: 1
-        atlas: {fileID: 0}
-        useTextureGUID: 1
-        textureGUID: 
-        usePivotOffset: 1
-        pivotOffset: {x: 0, y: 0}
-        useDefaultPivot: 1
-        useDepth: 1
-        depth: 0
-        useCollider: 1
-        collider:
-          type: 2
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 47, y: 130, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: Spear
-        textureIndex: -1
-      mixTransform: 0
-      visible: 1
-      colorRCurveSerialized:
-        keyframes: []
-      colorGCurveSerialized:
-        keyframes: []
-      colorBCurveSerialized:
-        keyframes: []
-      colorACurveSerialized:
-        keyframes: []
-      colorBlendWeightCurveSerialized:
-        keyframes: []
-    fps: 5
-    maxFrame: 0
-    wrapMode: 1
-    mix: 0
-    blendMode: 0
-    layer: 0
-    blendWeight: 1
-    animationNeedsTwoKeyframes: 1
   boneTransformPaths:
   - Root
   - Root/Base
   - Root/Base/Body
+  - Root/Base/Body/BodyCollider
   - Root/Base/Stick
   - Root/Base/Stick/Spearhead
   - Root/Base/Stick/Spearhead/SpearCollider
@@ -3984,6 +3471,7 @@ MonoBehaviour:
   - Root/Root_Sprite
   - Root/Base/Base_Sprite
   - Root/Base/Body/Body_Sprite
+  - Root/Base/Body/BodyCollider/BodyCollider_Sprite
   - Root/Base/Stick/Stick_Sprite
   - Root/Base/Stick/Spearhead/Spearhead_Sprite
   - Root/Base/Stick/Spearhead/SpearCollider/SpearCollider_Sprite
@@ -4000,7 +3488,6 @@ MonoBehaviour:
   animationClipSourceAssets:
   - {fileID: 7400000, guid: f221e015b51df244c9b75da089bce212, type: 2}
   - {fileID: 7400000, guid: 170acd62e0fba0c4c91cfbbf486be3f8, type: 2}
-  - {fileID: 7400000, guid: 98be94f4e12bf8f4292cae2709d80b80, type: 2}
   animationClipTriggerFrames:
   - clipIndex: 0
     triggerFrames:
@@ -4112,7 +3599,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -4130,6 +3617,46 @@ MonoBehaviour:
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
         boneNodeIndex: 3
+        triggerEventTypes: 0100000006000000
+        pivotOffset: {x: 0, y: 0}
+        upperLeft: {x: 0, y: 0, z: 0}
+        bottomLeft: {x: 0, y: 0, z: 0}
+        bottomRight: {x: 0, y: 0, z: 0}
+        upperRight: {x: 0, y: 0, z: 0}
+        uv:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        localPosition: {x: 0, y: 0, z: 0}
+        localRotation: 0
+        localScale: {x: 0, y: 0}
+        atlas: {fileID: 0}
+        textureGUID: 
+        materialIndex: 0
+        depth: 0
+        collider:
+          type: 1
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
+          sphereRadius: .349999994
+          useAnimationLayer: 1
+          layer: 0
+          isTrigger: 1
+          tag: Player
+        originalAtlas: {fileID: 0}
+        originalTextureGUID: 
+        originalMaterialIndex: 0
+        originalUV:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        originalPivotOffset: {x: 0, y: 0}
+      - userTriggerTag: 
+        boneNodeIndex: 4
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -16, y: 64, z: 0}
@@ -4170,7 +3697,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 4
+        boneNodeIndex: 5
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -64, y: 64, z: 0}
@@ -4211,7 +3738,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 5
+        boneNodeIndex: 6
         triggerEventTypes: 0100000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: 0, y: 0, z: 0}
@@ -4318,7 +3845,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -4335,7 +3862,7 @@ MonoBehaviour:
           height: .505859375
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 3
+        boneNodeIndex: 4
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -16, y: 64, z: 0}
@@ -4376,7 +3903,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 4
+        boneNodeIndex: 5
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -64, y: 64, z: 0}
@@ -4417,7 +3944,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 5
+        boneNodeIndex: 6
         triggerEventTypes: 06000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: 0, y: 0, z: 0}
@@ -4566,7 +4093,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -4584,6 +4111,46 @@ MonoBehaviour:
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
         boneNodeIndex: 3
+        triggerEventTypes: 0100000006000000
+        pivotOffset: {x: 0, y: 0}
+        upperLeft: {x: 0, y: 0, z: 0}
+        bottomLeft: {x: 0, y: 0, z: 0}
+        bottomRight: {x: 0, y: 0, z: 0}
+        upperRight: {x: 0, y: 0, z: 0}
+        uv:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        localPosition: {x: 0, y: 0, z: 0}
+        localRotation: 0
+        localScale: {x: 0, y: 0}
+        atlas: {fileID: 0}
+        textureGUID: 
+        materialIndex: 0
+        depth: 0
+        collider:
+          type: 1
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
+          sphereRadius: .349999994
+          useAnimationLayer: 1
+          layer: 0
+          isTrigger: 1
+          tag: Player
+        originalAtlas: {fileID: 0}
+        originalTextureGUID: 
+        originalMaterialIndex: 0
+        originalUV:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        originalPivotOffset: {x: 0, y: 0}
+      - userTriggerTag: 
+        boneNodeIndex: 4
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -16, y: 64, z: 0}
@@ -4624,7 +4191,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 4
+        boneNodeIndex: 5
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -64, y: 64, z: 0}
@@ -4665,7 +4232,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 5
+        boneNodeIndex: 6
         triggerEventTypes: 0100000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: 0, y: 0, z: 0}
@@ -4772,7 +4339,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -4789,7 +4356,7 @@ MonoBehaviour:
           height: .505859375
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 3
+        boneNodeIndex: 4
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -16, y: 64, z: 0}
@@ -4830,7 +4397,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 4
+        boneNodeIndex: 5
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -64, y: 64, z: 0}
@@ -4871,7 +4438,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 5
+        boneNodeIndex: 6
         triggerEventTypes: 06000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: 0, y: 0, z: 0}
@@ -4978,7 +4545,7 @@ MonoBehaviour:
           type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
+          sphereRadius: 70
           useAnimationLayer: 1
           layer: 0
           isTrigger: 1
@@ -4995,7 +4562,7 @@ MonoBehaviour:
           height: .505859375
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 3
+        boneNodeIndex: 4
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -16, y: 64, z: 0}
@@ -5036,7 +4603,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 4
+        boneNodeIndex: 5
         triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: -64, y: 64, z: 0}
@@ -5077,7 +4644,7 @@ MonoBehaviour:
           height: .25
         originalPivotOffset: {x: 0, y: 0}
       - userTriggerTag: 
-        boneNodeIndex: 5
+        boneNodeIndex: 6
         triggerEventTypes: 06000000
         pivotOffset: {x: 0, y: 0}
         upperLeft: {x: 0, y: 0, z: 0}
@@ -5099,254 +4666,6 @@ MonoBehaviour:
         depth: 0
         collider:
           type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 47, y: 130, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: Spear
-        originalAtlas: {fileID: 0}
-        originalTextureGUID: 
-        originalMaterialIndex: 0
-        originalUV:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        originalPivotOffset: {x: 0, y: 0}
-  - clipIndex: 2
-    triggerFrames:
-    - clipIndex: 2
-      frame: 0
-      triggerFrameBones:
-      - userTriggerTag: 
-        boneNodeIndex: 0
-        triggerEventTypes: 0100000006000000
-        pivotOffset: {x: 0, y: 0}
-        upperLeft: {x: 0, y: 0, z: 0}
-        bottomLeft: {x: 0, y: 0, z: 0}
-        bottomRight: {x: 0, y: 0, z: 0}
-        upperRight: {x: 0, y: 0, z: 0}
-        uv:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        localPosition: {x: 0, y: 0, z: 0}
-        localRotation: 0
-        localScale: {x: 0, y: 0}
-        atlas: {fileID: 0}
-        textureGUID: 
-        materialIndex: 0
-        depth: 0
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        originalAtlas: {fileID: 0}
-        originalTextureGUID: 
-        originalMaterialIndex: 0
-        originalUV:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        originalPivotOffset: {x: 0, y: 0}
-      - userTriggerTag: 
-        boneNodeIndex: 1
-        triggerEventTypes: 0100000006000000
-        pivotOffset: {x: 0, y: 0}
-        upperLeft: {x: 0, y: 0, z: 0}
-        bottomLeft: {x: 0, y: 0, z: 0}
-        bottomRight: {x: 0, y: 0, z: 0}
-        upperRight: {x: 0, y: 0, z: 0}
-        uv:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        localPosition: {x: 0, y: 0, z: 0}
-        localRotation: 0
-        localScale: {x: 0, y: 0}
-        atlas: {fileID: 0}
-        textureGUID: 
-        materialIndex: 0
-        depth: 0
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        originalAtlas: {fileID: 0}
-        originalTextureGUID: 
-        originalMaterialIndex: 0
-        originalUV:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        originalPivotOffset: {x: 0, y: 0}
-      - userTriggerTag: 
-        boneNodeIndex: 2
-        triggerEventTypes: 02000000040000000300000006000000
-        pivotOffset: {x: 0, y: 0}
-        upperLeft: {x: -139.5, y: 129.5, z: 0}
-        bottomLeft: {x: -139.5, y: -129.5, z: 0}
-        bottomRight: {x: 139.5, y: -129.5, z: 0}
-        upperRight: {x: 139.5, y: 129.5, z: 0}
-        uv:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: .544921875
-          height: .505859375
-        localPosition: {x: 0, y: 0, z: 0}
-        localRotation: 0
-        localScale: {x: 0, y: 0}
-        atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-        textureGUID: d9588468e4c11664287b8b3b0adae801
-        materialIndex: 0
-        depth: 0
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        originalAtlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86,
-          type: 2}
-        originalTextureGUID: d9588468e4c11664287b8b3b0adae801
-        originalMaterialIndex: 0
-        originalUV:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: .544921875
-          height: .505859375
-        originalPivotOffset: {x: 0, y: 0}
-      - userTriggerTag: 
-        boneNodeIndex: 3
-        triggerEventTypes: 02000000040000000300000006000000
-        pivotOffset: {x: 0, y: 0}
-        upperLeft: {x: -16, y: 64, z: 0}
-        bottomLeft: {x: -16, y: -64, z: 0}
-        bottomRight: {x: 16, y: -64, z: 0}
-        upperRight: {x: 16, y: 64, z: 0}
-        uv:
-          serializedVersion: 2
-          x: .798828125
-          y: 0
-          width: .0625
-          height: .25
-        localPosition: {x: 0, y: 0, z: 0}
-        localRotation: 0
-        localScale: {x: 0, y: 0}
-        atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-        textureGUID: 681dc6a07c33b73409189e0a42d9e4b6
-        materialIndex: 0
-        depth: 0
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        originalAtlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86,
-          type: 2}
-        originalTextureGUID: 681dc6a07c33b73409189e0a42d9e4b6
-        originalMaterialIndex: 0
-        originalUV:
-          serializedVersion: 2
-          x: .798828125
-          y: 0
-          width: .0625
-          height: .25
-        originalPivotOffset: {x: 0, y: 0}
-      - userTriggerTag: 
-        boneNodeIndex: 4
-        triggerEventTypes: 02000000040000000300000006000000
-        pivotOffset: {x: 0, y: 0}
-        upperLeft: {x: -64, y: 64, z: 0}
-        bottomLeft: {x: -64, y: -64, z: 0}
-        bottomRight: {x: 64, y: -64, z: 0}
-        upperRight: {x: 64, y: 64, z: 0}
-        uv:
-          serializedVersion: 2
-          x: .546875
-          y: 0
-          width: .25
-          height: .25
-        localPosition: {x: 0, y: 0, z: 0}
-        localRotation: 0
-        localScale: {x: 0, y: 0}
-        atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-        textureGUID: 845fef7591ce91242994bc292ab90509
-        materialIndex: 0
-        depth: 0
-        collider:
-          type: 0
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 0
-          useAnimationLayer: 1
-          layer: 0
-          isTrigger: 1
-          tag: 
-        originalAtlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86,
-          type: 2}
-        originalTextureGUID: 845fef7591ce91242994bc292ab90509
-        originalMaterialIndex: 0
-        originalUV:
-          serializedVersion: 2
-          x: .546875
-          y: 0
-          width: .25
-          height: .25
-        originalPivotOffset: {x: 0, y: 0}
-      - userTriggerTag: 
-        boneNodeIndex: 5
-        triggerEventTypes: 0100000006000000
-        pivotOffset: {x: 0, y: 0}
-        upperLeft: {x: 0, y: 0, z: 0}
-        bottomLeft: {x: 0, y: 0, z: 0}
-        bottomRight: {x: 0, y: 0, z: 0}
-        upperRight: {x: 0, y: 0, z: 0}
-        uv:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        localPosition: {x: 0, y: 0, z: 0}
-        localRotation: 0
-        localScale: {x: 0, y: 0}
-        atlas: {fileID: 0}
-        textureGUID: 
-        materialIndex: 0
-        depth: 0
-        collider:
-          type: 2
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 47, y: 130, z: 0}
           sphereRadius: 0
@@ -5473,7 +4792,7 @@ MonoBehaviour:
         type: 0
         center: {x: 0, y: 0, z: 0}
         boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
+        sphereRadius: 70
         useAnimationLayer: 1
         layer: 0
         isTrigger: 1
@@ -5490,6 +4809,46 @@ MonoBehaviour:
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
       boneNodeIndex: 3
+      triggerEventTypes: 0100000006000000
+      pivotOffset: {x: 0, y: 0}
+      upperLeft: {x: 0, y: 0, z: 0}
+      bottomLeft: {x: 0, y: 0, z: 0}
+      bottomRight: {x: 0, y: 0, z: 0}
+      upperRight: {x: 0, y: 0, z: 0}
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: 0
+      localScale: {x: 0, y: 0}
+      atlas: {fileID: 0}
+      textureGUID: 
+      materialIndex: 0
+      depth: 0
+      collider:
+        type: 1
+        center: {x: 0, y: 0, z: 0}
+        boxSize: {x: 0, y: 0, z: 0}
+        sphereRadius: .349999994
+        useAnimationLayer: 1
+        layer: 0
+        isTrigger: 1
+        tag: Player
+      originalAtlas: {fileID: 0}
+      originalTextureGUID: 
+      originalMaterialIndex: 0
+      originalUV:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      originalPivotOffset: {x: 0, y: 0}
+    - userTriggerTag: 
+      boneNodeIndex: 4
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -16, y: 64, z: 0}
@@ -5529,7 +4888,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 4
+      boneNodeIndex: 5
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -64, y: 64, z: 0}
@@ -5569,7 +4928,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 5
+      boneNodeIndex: 6
       triggerEventTypes: 0100000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: 0, y: 0, z: 0}
@@ -5676,7 +5035,7 @@ MonoBehaviour:
         type: 0
         center: {x: 0, y: 0, z: 0}
         boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
+        sphereRadius: 70
         useAnimationLayer: 1
         layer: 0
         isTrigger: 1
@@ -5692,7 +5051,7 @@ MonoBehaviour:
         height: .505859375
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 3
+      boneNodeIndex: 4
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -16, y: 64, z: 0}
@@ -5732,7 +5091,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 4
+      boneNodeIndex: 5
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -64, y: 64, z: 0}
@@ -5772,7 +5131,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 5
+      boneNodeIndex: 6
       triggerEventTypes: 06000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: 0, y: 0, z: 0}
@@ -5919,7 +5278,7 @@ MonoBehaviour:
         type: 0
         center: {x: 0, y: 0, z: 0}
         boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
+        sphereRadius: 70
         useAnimationLayer: 1
         layer: 0
         isTrigger: 1
@@ -5936,6 +5295,46 @@ MonoBehaviour:
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
       boneNodeIndex: 3
+      triggerEventTypes: 0100000006000000
+      pivotOffset: {x: 0, y: 0}
+      upperLeft: {x: 0, y: 0, z: 0}
+      bottomLeft: {x: 0, y: 0, z: 0}
+      bottomRight: {x: 0, y: 0, z: 0}
+      upperRight: {x: 0, y: 0, z: 0}
+      uv:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: 0
+      localScale: {x: 0, y: 0}
+      atlas: {fileID: 0}
+      textureGUID: 
+      materialIndex: 0
+      depth: 0
+      collider:
+        type: 1
+        center: {x: 0, y: 0, z: 0}
+        boxSize: {x: 0, y: 0, z: 0}
+        sphereRadius: .349999994
+        useAnimationLayer: 1
+        layer: 0
+        isTrigger: 1
+        tag: Player
+      originalAtlas: {fileID: 0}
+      originalTextureGUID: 
+      originalMaterialIndex: 0
+      originalUV:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      originalPivotOffset: {x: 0, y: 0}
+    - userTriggerTag: 
+      boneNodeIndex: 4
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -16, y: 64, z: 0}
@@ -5975,7 +5374,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 4
+      boneNodeIndex: 5
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -64, y: 64, z: 0}
@@ -6015,7 +5414,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 5
+      boneNodeIndex: 6
       triggerEventTypes: 0100000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: 0, y: 0, z: 0}
@@ -6122,7 +5521,7 @@ MonoBehaviour:
         type: 0
         center: {x: 0, y: 0, z: 0}
         boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
+        sphereRadius: 70
         useAnimationLayer: 1
         layer: 0
         isTrigger: 1
@@ -6138,7 +5537,7 @@ MonoBehaviour:
         height: .505859375
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 3
+      boneNodeIndex: 4
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -16, y: 64, z: 0}
@@ -6178,7 +5577,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 4
+      boneNodeIndex: 5
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -64, y: 64, z: 0}
@@ -6218,7 +5617,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 5
+      boneNodeIndex: 6
       triggerEventTypes: 06000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: 0, y: 0, z: 0}
@@ -6325,7 +5724,7 @@ MonoBehaviour:
         type: 0
         center: {x: 0, y: 0, z: 0}
         boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
+        sphereRadius: 70
         useAnimationLayer: 1
         layer: 0
         isTrigger: 1
@@ -6341,7 +5740,7 @@ MonoBehaviour:
         height: .505859375
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 3
+      boneNodeIndex: 4
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -16, y: 64, z: 0}
@@ -6381,7 +5780,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 4
+      boneNodeIndex: 5
       triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: -64, y: 64, z: 0}
@@ -6421,7 +5820,7 @@ MonoBehaviour:
         height: .25
       originalPivotOffset: {x: 0, y: 0}
     - userTriggerTag: 
-      boneNodeIndex: 5
+      boneNodeIndex: 6
       triggerEventTypes: 06000000
       pivotOffset: {x: 0, y: 0}
       upperLeft: {x: 0, y: 0, z: 0}
@@ -6460,249 +5859,6 @@ MonoBehaviour:
         width: 0
         height: 0
       originalPivotOffset: {x: 0, y: 0}
-  - clipIndex: 2
-    frame: 0
-    triggerFrameBones:
-    - userTriggerTag: 
-      boneNodeIndex: 0
-      triggerEventTypes: 0100000006000000
-      pivotOffset: {x: 0, y: 0}
-      upperLeft: {x: 0, y: 0, z: 0}
-      bottomLeft: {x: 0, y: 0, z: 0}
-      bottomRight: {x: 0, y: 0, z: 0}
-      upperRight: {x: 0, y: 0, z: 0}
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: 0
-      localScale: {x: 0, y: 0}
-      atlas: {fileID: 0}
-      textureGUID: 
-      materialIndex: 0
-      depth: 0
-      collider:
-        type: 0
-        center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
-        useAnimationLayer: 1
-        layer: 0
-        isTrigger: 1
-        tag: 
-      originalAtlas: {fileID: 0}
-      originalTextureGUID: 
-      originalMaterialIndex: 0
-      originalUV:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      originalPivotOffset: {x: 0, y: 0}
-    - userTriggerTag: 
-      boneNodeIndex: 1
-      triggerEventTypes: 0100000006000000
-      pivotOffset: {x: 0, y: 0}
-      upperLeft: {x: 0, y: 0, z: 0}
-      bottomLeft: {x: 0, y: 0, z: 0}
-      bottomRight: {x: 0, y: 0, z: 0}
-      upperRight: {x: 0, y: 0, z: 0}
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: 0
-      localScale: {x: 0, y: 0}
-      atlas: {fileID: 0}
-      textureGUID: 
-      materialIndex: 0
-      depth: 0
-      collider:
-        type: 0
-        center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
-        useAnimationLayer: 1
-        layer: 0
-        isTrigger: 1
-        tag: 
-      originalAtlas: {fileID: 0}
-      originalTextureGUID: 
-      originalMaterialIndex: 0
-      originalUV:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      originalPivotOffset: {x: 0, y: 0}
-    - userTriggerTag: 
-      boneNodeIndex: 2
-      triggerEventTypes: 02000000040000000300000006000000
-      pivotOffset: {x: 0, y: 0}
-      upperLeft: {x: -139.5, y: 129.5, z: 0}
-      bottomLeft: {x: -139.5, y: -129.5, z: 0}
-      bottomRight: {x: 139.5, y: -129.5, z: 0}
-      upperRight: {x: 139.5, y: 129.5, z: 0}
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: .544921875
-        height: .505859375
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: 0
-      localScale: {x: 0, y: 0}
-      atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-      textureGUID: d9588468e4c11664287b8b3b0adae801
-      materialIndex: 0
-      depth: 0
-      collider:
-        type: 0
-        center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
-        useAnimationLayer: 1
-        layer: 0
-        isTrigger: 1
-        tag: 
-      originalAtlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-      originalTextureGUID: d9588468e4c11664287b8b3b0adae801
-      originalMaterialIndex: 0
-      originalUV:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: .544921875
-        height: .505859375
-      originalPivotOffset: {x: 0, y: 0}
-    - userTriggerTag: 
-      boneNodeIndex: 3
-      triggerEventTypes: 02000000040000000300000006000000
-      pivotOffset: {x: 0, y: 0}
-      upperLeft: {x: -16, y: 64, z: 0}
-      bottomLeft: {x: -16, y: -64, z: 0}
-      bottomRight: {x: 16, y: -64, z: 0}
-      upperRight: {x: 16, y: 64, z: 0}
-      uv:
-        serializedVersion: 2
-        x: .798828125
-        y: 0
-        width: .0625
-        height: .25
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: 0
-      localScale: {x: 0, y: 0}
-      atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-      textureGUID: 681dc6a07c33b73409189e0a42d9e4b6
-      materialIndex: 0
-      depth: 0
-      collider:
-        type: 0
-        center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
-        useAnimationLayer: 1
-        layer: 0
-        isTrigger: 1
-        tag: 
-      originalAtlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-      originalTextureGUID: 681dc6a07c33b73409189e0a42d9e4b6
-      originalMaterialIndex: 0
-      originalUV:
-        serializedVersion: 2
-        x: .798828125
-        y: 0
-        width: .0625
-        height: .25
-      originalPivotOffset: {x: 0, y: 0}
-    - userTriggerTag: 
-      boneNodeIndex: 4
-      triggerEventTypes: 02000000040000000300000006000000
-      pivotOffset: {x: 0, y: 0}
-      upperLeft: {x: -64, y: 64, z: 0}
-      bottomLeft: {x: -64, y: -64, z: 0}
-      bottomRight: {x: 64, y: -64, z: 0}
-      upperRight: {x: 64, y: 64, z: 0}
-      uv:
-        serializedVersion: 2
-        x: .546875
-        y: 0
-        width: .25
-        height: .25
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: 0
-      localScale: {x: 0, y: 0}
-      atlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-      textureGUID: 845fef7591ce91242994bc292ab90509
-      materialIndex: 0
-      depth: 0
-      collider:
-        type: 0
-        center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 0
-        useAnimationLayer: 1
-        layer: 0
-        isTrigger: 1
-        tag: 
-      originalAtlas: {fileID: 11400000, guid: 004212a02472f5943a9b4bf45f258f86, type: 2}
-      originalTextureGUID: 845fef7591ce91242994bc292ab90509
-      originalMaterialIndex: 0
-      originalUV:
-        serializedVersion: 2
-        x: .546875
-        y: 0
-        width: .25
-        height: .25
-      originalPivotOffset: {x: 0, y: 0}
-    - userTriggerTag: 
-      boneNodeIndex: 5
-      triggerEventTypes: 0100000006000000
-      pivotOffset: {x: 0, y: 0}
-      upperLeft: {x: 0, y: 0, z: 0}
-      bottomLeft: {x: 0, y: 0, z: 0}
-      bottomRight: {x: 0, y: 0, z: 0}
-      upperRight: {x: 0, y: 0, z: 0}
-      uv:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      localPosition: {x: 0, y: 0, z: 0}
-      localRotation: 0
-      localScale: {x: 0, y: 0}
-      atlas: {fileID: 0}
-      textureGUID: 
-      materialIndex: 0
-      depth: 0
-      collider:
-        type: 2
-        center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 47, y: 130, z: 0}
-        sphereRadius: 0
-        useAnimationLayer: 1
-        layer: 0
-        isTrigger: 1
-        tag: Spear
-      originalAtlas: {fileID: 0}
-      originalTextureGUID: 
-      originalMaterialIndex: 0
-      originalUV:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      originalPivotOffset: {x: 0, y: 0}
   vertices:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -6716,6 +5872,10 @@ MonoBehaviour:
   - {x: -139.5, y: -129.5, z: 0}
   - {x: 139.5, y: -129.5, z: 0}
   - {x: 139.5, y: 129.5, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   - {x: -16, y: 64, z: 0}
   - {x: -16, y: -64, z: 0}
   - {x: 16, y: -64, z: 0}
@@ -6741,6 +5901,10 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: .544921875, y: 0}
   - {x: .544921875, y: .505859375}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
   - {x: .798828125, y: .25}
   - {x: .798828125, y: 0}
   - {x: .861328125, y: 0}
@@ -6754,6 +5918,10 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   colors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
@@ -6803,7 +5971,43 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -1}
   - {x: 0, y: 0, z: -1}
   - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
+  - {x: 0, y: 0, z: -1}
   bindPoses:
+  - e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
   - e00: 1
     e01: 0
     e02: 0

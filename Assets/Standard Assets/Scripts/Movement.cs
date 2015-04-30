@@ -18,4 +18,8 @@ public class Movement : MonoBehaviour {
 	void FixedUpdate () {
 		transform.Translate( new Vector3( 0, y_speed, 0));
 	}
+
+	public void setSpeed (float speed) {
+		y_speed = speed;
+	}
 }
